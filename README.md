@@ -1,7 +1,7 @@
 --pico8 debugprint cartridge
 --to use:
 --in main cart:
-`#includes debugprint.p8`
+`#include debugprint.p8`
 
 -- in `_draw` function after `cls()`:
 
