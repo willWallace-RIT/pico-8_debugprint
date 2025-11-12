@@ -1,9 +1,16 @@
 
 printdata = {}
-
 function addprint(name,data)
-		printdata[name]=""..data
+	if data==nil then
+		printdata[name] = "nil"
+	else
+		if(type(data) == "number") then
+		 printdata[name]=tostr(data)
+		else
+			printdata[name]=data
+		end
 	end
+end
 
 
 function drawprint(topleftx,toplefty)
